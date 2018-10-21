@@ -1,4 +1,4 @@
-def isVowel(char):
+def is_vowel(char):
     char = char.lower()
     if (   char == 'a'
         or char == 'e'
@@ -9,14 +9,16 @@ def isVowel(char):
     else:
         return False
 
-def countVowels(string):
+
+def count_vowels(string):
     vowels = 0
 
     # should move the .map
     for i in string:
-        if isVowel(i):
+        if is_vowel(i):
             vowels += 1
 
     return vowels
 
-print(countVowels("There you go"))
+
+print(count_vowels("There you go"))
