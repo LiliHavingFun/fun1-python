@@ -8,7 +8,7 @@ def fib(number):
 def fib_list(number):
     list = []
     for n in range(0, number):
-        list.append(fib(n))
+        list.append(int(fib(n)))
 
     return list
 
